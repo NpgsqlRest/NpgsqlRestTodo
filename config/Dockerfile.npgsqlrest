@@ -1,0 +1,7 @@
+FROM vbilopav/npgsqlrest:v2.17.0
+
+WORKDIR /app
+
+COPY ./config/npgsqlrest.json ./appsettings.json
+
+ENTRYPOINT ["npgsqlrest", "appsettings.json"]

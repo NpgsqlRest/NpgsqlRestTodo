@@ -1,0 +1,18 @@
+node_modules
+# .env
+dist/
+
+# scrap scripts
+scrap
+*scrap
+*scrap*
+scrap.*
+
+# local files
+# *.local.env
+# *.local.js
+logs
+
+bun.lock
+.vscode/launch.json
+worker/.env
