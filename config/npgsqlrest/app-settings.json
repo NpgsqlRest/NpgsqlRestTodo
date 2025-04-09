@@ -1,0 +1,34 @@
+/*
+  ref: https://github.com/NpgsqlRest/NpgsqlRest/blob/master/NpgsqlRestClient/appsettings.json
+*/
+{
+  "ApplicationName": "Todo",
+  "StartupMessage": "Todo, NpgsqlRest Listening on http://127.0.0.1:8080 [{0},{1},{2},{3},{4}]",
+  "Urls": "http://0.0.0.0:8080/",
+
+  "Auth": {
+    "CookieName": "todo"
+  },
+
+  "Log": {
+    "FilePath": "./logs/todo_app_.txt"
+  },
+
+  "StaticFiles": {
+    "RootPath": "./app_dist"
+  },
+
+  "NpgsqlRest": {
+    "AuthenticationOptions": {
+      "DefaultAuthenticationType": "todo"
+    },
+
+    "HttpFileOptions": {
+      "NamePattern":  "./http/app_{0}_{1}"
+    },
+
+    "ClientCodeGen": {
+      "FilePath": "./src/app/api/{0}Api.ts"
+    }
+  }
+}
